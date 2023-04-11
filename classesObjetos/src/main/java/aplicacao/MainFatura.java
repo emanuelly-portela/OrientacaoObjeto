@@ -3,7 +3,7 @@ package aplicacao;
 import classes.Fatura;
 import java.util.Scanner;
 
-public class main {
+public class MainFatura {
 
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
