@@ -1,6 +1,8 @@
 //Exercicio 1
 package exercicioMetodos;
 
+import java.time.LocalDate;
+
 public class Pessoa {
     
     private int idade;
@@ -9,8 +11,7 @@ public class Pessoa {
     private int anoNascimento;
     private String nome;
     
-    //assinatura de um metodo, precisa ter a visibilidade dele, 
-    //o tipo de retorno e o nome do metodo. Usa-se void qnd não retorna nada.
+    
     public Pessoa(int diaNascimento, int mesNascimento, int anoNascimento, String nome){
     this.diaNascimento = diaNascimento;
     this.anoNascimento = anoNascimento;
@@ -20,7 +21,7 @@ public class Pessoa {
     }
     
     public final int calculaIdade(int diaAtual, int mesAtual){
-    int idade = 2023 - this.anoNascimento;
+    int idade = LocalDate.now().getYear() - this.anoNascimento;
     if (mesAtual < this.mesNascimento || (mesAtual == this.mesNascimento && diaAtual < this.diaNascimento)){
         return idade--;
         }
