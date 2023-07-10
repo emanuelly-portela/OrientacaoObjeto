@@ -8,8 +8,8 @@ public class Main {
     public static void main(String[] args) {
         createAlunos();
 
-        //createPrimeiroProfessor();
-        //createSegundoProfessor();
+        createPrimeiroProfessor();
+        createSegundoProfessor();
     }
     
     private static void createPrimeiroProfessor() {
